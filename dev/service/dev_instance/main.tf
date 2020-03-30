@@ -38,22 +38,5 @@ module "build_ec2" {
   ec2_instance_subnet_id         = var.ec2_instance_subnet_id
   ec2_instance_key_name          = var.ec2_instance_key_name
   vpc_security_group_ids         = [module.build_sg.this_sg_id]
-  ec2_environment                = var.ec2_environment
-  ec2_vpc_tag_lookup             = var.ec2_vpc_tag_lookup
-  ec2_tl_domain_name             = var.ec2_tl_domain_name
-  ec2_app_name                   = var.ec2_app_name
-  ec2_service                    = var.ec2_service
-  ec2_create_ip                  = var.ec2_create_ip
-  ec2_create_volume              = var.ec2_create_volume
-  ec2_device_name                = var.ec2_device_name
-  ec2_ebs_volume_size            = var.ec2_ebs_volume_size
-  ec2_ebs_volume_type            = var.ec2_ebs_volume_type
-  ec2_create_iam                 = var.ec2_create_iam
-  ec2_iam_role_name              = var.ec2_iam_role_name
-  ec2_iam_instance_profile_name  = var.ec2_iam_instance_profile_name
-  ec2_iam_policy_name            = var.ec2_iam_policy_name
-  ec2_iam_policy_description     = var.ec2_iam_policy_description
-  ec2_iam_policy_attachment_name = var.ec2_iam_policy_attachment_name
-  ec2_iam_instance_profile_set   = var.ec2_iam_instance_profile_set
 }
 
