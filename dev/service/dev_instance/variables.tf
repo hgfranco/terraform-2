@@ -72,7 +72,6 @@ variable "sg_all_cidrs" {
   default = []
 }
 
-
 # EC2 app instance variables
 variable "ec2_instance_count" {
   default = "1"
@@ -98,91 +97,4 @@ variable "ec2_instance_key_name" {
 #   description = "Security Group ID"
 # }
 
-variable "ec2_environment" {
-  default = "dev"
-}
-
-variable "ec2_vpc_tag_lookup" {
-  default = "*172-30-3*"
-}
-
-variable "ec2_tl_domain_name" {
-  default = "tab"
-}
-
-variable "ec2_app_name" {
-  default = "aws-ec2-franco"
-}
-
-variable "ec2_service" {
-  default = "dev_instance"
-}
-
-variable "ec2_create_ip" {
-  default = "false"
-}
-
-variable "ec2_create_volume" {
-  default = "true"
-}
-
-variable "ec2_device_name" {
-  type = list(string)
-
-  default = [
-    "/dev/sda1",
-    "/dev/sdb",
-  ]
-}
-
-variable "ec2_ebs_volume_size" {
-  type = list(string)
-
-  default = [
-    "100",
-    "300",
-  ]
-}
-
-variable "ec2_ebs_volume_type" {
-  default = "gp2"
-}
-
-variable "ec2_create_iam" {
-  default = "false"
-}
-
-variable "ec2_iam_role_name" {
-  type = list(string)
-
-  default = []
-}
-
-variable "ec2_iam_instance_profile_name" {
-  type = list(string)
-
-  default = []
-}
-
-variable "ec2_iam_policy_name" {
-  type = list(string)
-
-  default = []
-}
-
-variable "ec2_iam_policy_description" {
-  type = list(string)
-
-  default = []
-}
-
-variable "ec2_iam_policy_attachment_name" {
-  type = list(string)
-
-  default = []
-}
-
-variable "ec2_iam_instance_profile_set" {
-  default = "false"
-}
 
